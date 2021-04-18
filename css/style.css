@@ -1,0 +1,32 @@
+body {margin: 0; overflow-x:hidden;}
+
+/*Font Settings*/
+h1,h2,h3,h4,h5,h6 {font-family: 'Source Serif Pro', serif; letter-spacing: 2%;}
+p {font-family: 'Work Sans', sans-serif;}
+
+h1 {font-size: 43pt;}
+h2 {font-size: 33pt;}
+h3 {font-size: 26pt;}
+h4 {font-size: 20pt;}
+h5 {font-size: 16pt;}
+h6,p {font-size: 13pt;}
+
+.caption {font-size: 11pt;}
+
+.font-2 {font-family: 'Work Sans', sans-serif;}
+
+
+/*Collor Settings*/
+.palette-box {width: 70px; height: 70px;}
+.pb-blue {background-color: #359EE0;}
+.pb-pink {background-color: #F39B8F;}
+.pb-yellow {background-color: #FFF07D;}
+.pb-black {background-color: #3A2729;}
+
+.pb-blue-02 {background-color: #AED8F3;}
+.pb-pink-02 {background-color: #FDEBE9;}
+.pb-yellow-02 {background-color: #FFF9CB;}
+.pb-black-02 {background-color: #887D7F}
+
+
+/*Button Settings*/
