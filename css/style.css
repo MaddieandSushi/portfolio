@@ -1,8 +1,16 @@
 body {margin: 0; overflow-x:hidden;}
 
 /*Font Settings*/
-h1,h2,h3,h4,h5,h6 {font-family: 'Comfortaa', cursive; letter-spacing: 2%; font-weight:700;}
-p {font-family: 'Work Sans', sans-serif; font-weight: 400;}
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Comfortaa', cursive; 
+  letter-spacing: 2%; 
+  font-weight:700;
+  color: #3A2729;
+}
+p {font-family: 'Work Sans', sans-serif; 
+  font-weight: 400;
+  color: #3A2729;
+}
 
 h1 {font-size: 43pt;}
 h2 {font-size: 33pt;}
@@ -14,6 +22,11 @@ a:link {
   text-decoration: none;
   font-family: 'Work Sans', sans-serif; 
   font-weight: 400;
+  color: #3A2729;
+}
+li {
+  list-style: none;
+  color: #3A2729;
 }
 
 .caption {font-size: 11pt; font-family: 'Work Sans', sans-serif;}
@@ -98,3 +111,27 @@ a:link {
 .tag-01 {padding: 0px 10px; background-color: #AED8F3; font-size: 10pt;}
 .tag-02 {padding: 0px 10px; background-color: #FDEBE9; font-size: 10pt;}
 .tag-03 {padding: 0px 10px; background-color: #FFF9CB; font-size: 10pt;}
+
+
+/*++++Design-System++++*/
+#design-system-page {
+  display: flex;
+}
+.sidemenu {
+  background-color: #FFC3BB;
+  padding-left: 30px;
+  padding-right: 30px;
+  height: 100vh;
+}
+
+.sub-item {color: #615254;}
+
+@media only screen and (max-width: 768px){
+  .sidemenu {
+    background-color: #FFC3BB;
+    padding-left: 30px;
+    padding-right: 30px;
+    height: auto;
+    width: 100%;
+  }
+}
