@@ -6,22 +6,29 @@ body {
   box-sizing: border-box; 
   overflow-x:hidden;}
 
-/*+++++Nav Menu+++++*/
-.nav {width: 100%;}
-.nav a {color: #3A2729;}
+/*+++++Nav Menu #2+++++*/
+.navbar a {color: #3A2729;}
+
+.navlogo {
+  display: inline-block;
+  padding: .20rem 0rem;
+}
+.navlogo h4:hover {
+  color:#f39b8f;
+}
+
 .navlink {
   display: block;
   padding: .35rem 1rem;
   text-decoration: none;
   border-bottom: 2px solid white; 
-  margin-top: 13px;
   transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
 }
-.nav-link:hover {border-bottom: 2px solid #FFF07D;}
+.navlink:hover {border-bottom: 2px solid #FFF07D;}
 .fa-plus{font-size: .65em;}
 
 .dropdown-menu li:hover {background-color: #FFF07D;}
-.dropdown-menu.show {border: 0.75px solid #f39b8f; margin-top: 60px;}
+.dropdown-menu.show {border: 0.75px solid #f39b8f;}
 
 .nav-toggle {display: none;}
 .line1, .line2, .line3 {
@@ -30,8 +37,5 @@ body {
   background-color: #3A2729;
 }
 
-@media only screen and (max-width: 992px) {
-  .navlink {display: none;}
-  .nav-toggle {display: block;}
-}
-/*+++++Nav Menu END+++++*/
+@media only screen and (max-width: 992px) {}
+/*+++++Nav Menu #2 END+++++*/
