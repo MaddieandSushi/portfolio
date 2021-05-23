@@ -25,14 +25,28 @@ body {
 
 .li-link {
   margin-top: 7px;
-  padding: 0rem 1rem;
+  margin-left: 2.5rem;
   text-decoration: none;
   height: 1.5rem;
   border-bottom: 2px solid white; 
   transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
 }
 .li-link:hover {border-bottom: 2px solid #FFF07D;}
-.fa-plus{font-size: .65em;}
+.fa-plus{font-size: .65em; position: absolute; margin-top: 7.5px; margin-left: 3px;}
+
+.ddown-menu {
+  margin-left: 2.5rem;
+  margin-top: 13px;
+  width: 209px;
+  border: 1.5px solid #f39b8f;
+  border-radius: 0px 0px 10px 10px;
+}
+
+.ddown-menu a {
+  border-bottom: 2px solid white; 
+  display: block;
+}
+.ddown-menu a:hover {border-bottom: 2px solid #FFF07D;}
 
 /*
 .dropdownmenu li:hover {background-color: #FFF07D;}
