@@ -25,16 +25,151 @@
     <script src="https://kit.fontawesome.com/8cac736156.js" crossorigin="anonymous"></script>
     <!--Fonts & Iconography END--> 
 
-    <!--css from Webflow-->
+    <!--jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!--jQuery END-->
+
+    <!--css from Webflow
     <link href="css/normalize.css" rel="stylesheet" type="text/css">
     <link href="css/webflow.css" rel="stylesheet" type="text/css">
     <link href="css/maddieandsushi-v3.webflow.css" rel="stylesheet" type="text/css">
-    <!--css from Webflow END-->
+    css from Webflow END-->
   </head>
 
   <body>
     <section>
-      <!--Navbar-->
+      <!--Navbar vr.2-->
+      <div class="container-m container-fluid">
+        <nav class="navbar-m px-5 mt-3">
+          <span class="nav-logo"><a href="#"><h3>maddieandsushi</h3></a></span>
+
+          <ul class="d-flex mt-1">
+            <li class="navbar-m-li"><a href="#">Home</a></li>
+            <li class="dropdown navbar-m-li">
+              <a class="dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Web Design & Dev</a>
+              <ul class="dropdown-menu" style="border-color: #F39B8F;">
+                <li><a class="dropdown-item" href="#">Project 01</a></li>
+                <li><a class="dropdown-item" href="#">Project 02</a></li>
+                <li><a class="dropdown-item" href="#">Project 03</a></li>
+                <li><a class="dropdown-item" href="#">See More +</a></li>
+              </ul>
+            </li>
+            <li class="dropdown navbar-m-li">
+              <a class="dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Illustration</a>
+              <ul class="dropdown-menu" style="border-color: #F39B8F;">
+                <li><a class="dropdown-item" href="#">Project 01</a></li>
+                <li><a class="dropdown-item" href="#">Project 02</a></li>
+                <li><a class="dropdown-item" href="#">Project 03</a></li>
+                <li><a class="dropdown-item" href="#">See More +</a></li>
+              </ul>
+            </li>
+            <li class="dropdown navbar-m-li">
+              <a class="dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Motion Graphics</a>
+              <ul class="dropdown-menu nav-dropdown-menu" style="border-color: #F39B8F;">
+                <li><a class="dropdown-item" href="#">Project 01</a></li>
+                <li><a class="dropdown-item" href="#">Project 02</a></li>
+                <li><a class="dropdown-item" href="#">Project 03</a></li>
+                <li><a class="dropdown-item" href="#">See More +</a></li>
+              </ul>
+            </li>
+            <li class="navbar-m-li"><a href="#">Let's Collab</a></li>
+          </ul>
+        </nav>
+
+        <nav class="navbar-toggle-menu">
+          <a id="pink-toggle-icon" class="mt-3 position-absolute" style="right: 20px;" href="#"><img src="assets/toggle-icon.svg"></a>
+
+          <div class="row" style="height: 100vh;"> <!--style="margin-top: -76px;"-->
+            <div class="col-lg-9 col-md-12 col-12 pt-4" style="background-color: #3A2729;">
+              <img src="assets/logo-outline.png" height="70px;" style="margin-left: 20px;">
+
+              <ul class="mt-4" style="margin-right: 20px;">
+                <li><a href="#"><i class="fas fa-heart toggle-icon"></i>Home</a></li>
+                <li style="color: white; font-family: 'Work Sans', sans-serif; margin-bottom: -15px;"><i class="fas fa-heart toggle-icon"></i>Portfolio</p></li>
+                <!--<p class="toggle-category"><i class="fas fa-heart toggle-icon"></i>Portfolio</p>-->
+                <div class="row">
+                  <div class="col-lg-4 col-md-4 col-12 toggle-md-link">
+                    <li>
+                      <p class="toggle-category">Web Design & Dev</p>
+                      <ul>
+                        <li><a href="#"><i class="fas fa-heart toggle-icon"></i>Pufft</a></li>
+                        <li><a href="#"><i class="fas fa-heart toggle-icon"></i>Fashion Monkeys</a></li>
+                        <li><a href="#"><i class="fas fa-heart toggle-icon"></i>HDC</a></li>
+                        <li><a href="#"><i class="fas fa-heart toggle-icon"></i>See More +</a></li>
+                      </ul>
+                    </li>
+                    <!--
+                    <li class="dropdown toggle-dropdown-menu">
+                      <a class="dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Web Design & Dev</a>
+                      <ul class="dropdown-menu position-relative">
+                        <li><a class="dropdown-item" href="#">Project 01</a></li>
+                        <li><a class="dropdown-item" href="#">Project 02</a></li>
+                        <li><a class="dropdown-item" href="#">Project 03</a></li>
+                        <li><a class="dropdown-item" href="#">See More +</a></li>
+                      </ul>
+                    </li>
+                    <li>-->
+                  </div>
+                  <div class="col-lg-4 col-md-4 col-12">
+                    <li>
+                      <p class="toggle-category">Illustration</p>
+                      <ul>
+                        <li><a href="#"><i class="fas fa-heart toggle-icon"></i>The Orange Pig</a></li>
+                        <li><a href="#"><i class="fas fa-heart toggle-icon"></i>Houseplant Appreciation</a></li>
+                        <li><a href="#"><i class="fas fa-heart toggle-icon"></i>Witchgust 2018</a></li>
+                        <li><a href="#"><i class="fas fa-heart toggle-icon"></i>See More +</a></li>
+                      </ul>
+                    </li>
+                    <!--
+                    <li class="dropdown toggle-dropdown-menu">
+                      <a class="dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Illustration</a>
+                      <ul class="dropdown-menu position-relative">
+                        <li><a class="dropdown-item" href="#">Project 01</a></li>
+                        <li><a class="dropdown-item" href="#">Project 02</a></li>
+                        <li><a class="dropdown-item" href="#">Project 03</a></li>
+                        <li><a class="dropdown-item" href="#">See More +</a></li>
+                      </ul>
+                    </li>
+                  -->
+                  </div>
+                  <div class="col-lg-4 col-md-4 col-12">
+                    <li>
+                      <p class="toggle-category">Motion Graphics</p>
+                      <ul>
+                        <li><a href="#"><i class="fas fa-heart toggle-icon"></i>Raketeer</a></li>
+                        <li><a href="#"><i class="fas fa-heart toggle-icon"></i>UST Medical Explainer Videos</a></li>
+                        <li><a href="#"><i class="fas fa-heart toggle-icon"></i>Quipper</a></li>
+                        <li><a href="#"><i class="fas fa-heart toggle-icon"></i>See More +</a></li>
+                      </ul>
+                    </li>
+                    <!--
+                    <li class="dropdown toggle-dropdown-menu">
+                      <a class="dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Motion Graphics</a>
+                      <ul class="dropdown-menu position-relative">
+                        <li><a class="dropdown-item" href="#">Project 01</a></li>
+                        <li><a class="dropdown-item" href="#">Project 02</a></li>
+                        <li><a class="dropdown-item" href="#">Project 03</a></li>
+                        <li><a class="dropdown-item" href="#">See More +</a></li>
+                      </ul>
+                    </li>
+                  -->
+                  </div>
+                </div>
+                <li class=""><a href="#"><i class="fas fa-heart toggle-icon"></i>Let's Collab</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-md-12 col-12 collab-col" style="background-color: #FFC3BB;">
+              <h6>Let's Collab</h6>
+              <p>Email: hello.@maddieandsushi.com<br>
+                Phone: (+63) 0917 567 0049<br>
+                Address: Paranaque City, Metro Manila, PH, 1720</p>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <!--Navbar vr.2 END-->
+      
+      <!--Navbar
       <div data-collapse="medium" data-animation="over-right" data-duration="400" data-doc-height="1" role="banner" class="navbar-4 w-nav">
         <div class="container-17 w-container">
           <div class="menu-button-3 w-nav-button">
@@ -129,7 +264,7 @@
           </nav>
         </div>
       </div>
-      <!--Navbar END-->
+      Navbar END-->
     </section>
 
     
